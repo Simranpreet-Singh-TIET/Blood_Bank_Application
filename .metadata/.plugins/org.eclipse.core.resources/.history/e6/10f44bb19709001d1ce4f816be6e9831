@@ -1,0 +1,7 @@
+package issueblood;
+
+import javafx.fxml.FXML;
+
+public class IssueBloodViewController {
+
+}

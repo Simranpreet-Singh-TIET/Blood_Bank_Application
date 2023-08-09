@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="500.0" minWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="college.McardViewController">
+   <children>
+      <Label layoutX="211.0" layoutY="29.0" prefHeight="34.0" prefWidth="109.0" text="Basics" textFill="#da0000">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="100.0" text="Enter Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="201.0" text="Enter A">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="66.0" layoutY="69.0" prefHeight="6.0" prefWidth="400.0" />
+      <TextField fx:id="txtName" layoutX="211.0" layoutY="98.0" />
+      <Button layoutX="212.0" layoutY="139.0" mnemonicParsing="false" onAction="#doHello" text="Say Hello" />
+      <Separator layoutX="62.0" layoutY="173.0" prefHeight="6.0" prefWidth="420.0" />
+      <TextField fx:id="txtA" layoutX="211.0" layoutY="199.0" promptText="enter numeric value" />
+      <Label layoutX="81.0" layoutY="252.0" text="Enter B">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtB" layoutX="211.0" layoutY="250.0" promptText="enter numeric value" />
+      <Button layoutX="140.0" layoutY="302.0" mnemonicParsing="false" onAction="#doSum" prefHeight="30.0" prefWidth="70.0" text="Sum" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="227.0" layoutY="302.0" mnemonicParsing="false" onAction="#doMulti" text="Multiplication" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="346.0" layoutY="302.0" mnemonicParsing="false" onAction="#doSaaaf" text="Clear All" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="106.0" layoutY="357.0" text="Result">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtResult" layoutX="236.0" layoutY="355.0" />
+      <ImageView fitHeight="92.0" fitWidth="103.0" layoutX="381.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="92.0" layoutX="220.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnMinus" layoutX="66.0" layoutY="305.0" mnemonicParsing="false" onAction="#doMinus" text="Minus" />
+   </children>
+</AnchorPane>
